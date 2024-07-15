@@ -1,5 +1,5 @@
 const TodoData = (props) =>{
-    const {name, age, data} = props;//object destructuring
+    const {name, age, data, addNewTodo} = props;//object destructuring
 
     return (
         <div className="todo-data">

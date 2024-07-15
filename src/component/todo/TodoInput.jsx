@@ -1,4 +1,7 @@
-const TodoInput = () => {
+const TodoInput = (props) => {
+
+    const {addNewTodo} = props;
+    
     return (
         <div className="todo-contain-input">
           <input className="todo-input" type="text"></input>
