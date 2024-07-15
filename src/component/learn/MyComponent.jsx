@@ -1,6 +1,18 @@
+import './style.css'
+
 const MyComponent = () => {
+    const hoiDanIT = 'eric';
+    //khong hiem thi cac kieu du lieu sao:
+    //null
+    //boolean
+    //undefined
+
+    //array [1,2,3] sẽ thành 123
+    //object: lỗi (object is not react child)
     return (
-      <div>eric $ hoidanIT</div>
+        <>
+            <div>{hoiDanIT} $ hoidanIT</div>
+        </>
     );
 }
 
