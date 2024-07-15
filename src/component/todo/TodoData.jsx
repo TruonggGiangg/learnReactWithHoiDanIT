@@ -1,11 +1,14 @@
 const TodoData = (props) =>{
-    const {name, age, data, addNewTodo} = props;//object destructuring
-
+    const {names, age, data, todoList} = props;//object destructuring
+    
     return (
         <div className="todo-data">
-          <div>{name}</div>
+          <div>{names}</div>
           <div>{age}</div>
           <div>{JSON.stringify(data)}</div>
+          <div>
+            {JSON.stringify(todoList)}
+          </div>
         </div>
     )
 }
