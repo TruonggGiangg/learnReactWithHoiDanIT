@@ -6,6 +6,11 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+
+  const myFunc = () => {
+    console.log('>>> My arrow func!!')
+  }
+
   return (
     <>
       <div>
