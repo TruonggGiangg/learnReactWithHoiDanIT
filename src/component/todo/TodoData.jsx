@@ -1,8 +1,11 @@
-const TodoData = () =>{
+const TodoData = (props) =>{
+    const {name, age, data} = props;//object destructuring
+
     return (
         <div className="todo-data">
-          <div>Learning React</div>
-          <div>Learning React</div>
+          <div>{name}</div>
+          <div>{age}</div>
+          <div>{JSON.stringify(data)}</div>
         </div>
     )
 }
