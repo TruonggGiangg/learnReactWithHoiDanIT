@@ -50,12 +50,27 @@
     flex-direction: column;
 }
 
-.todo-data div{
+.todo-data .todo-item{
     border-bottom: 1px solid #ccc;
     width: 100%;
     padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
+.todo-data .todo-item button{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  border: none;
+}
+
+.todo-data .todo-item button:hover{
+  background-color: rgb(179, 0, 0);
+  color: rgb(209, 209, 209);
+  transition: 0.5s;
+}
 .logo {
     text-align: center;
     height: 6em;

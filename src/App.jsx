@@ -40,9 +40,6 @@ const App = () => {
           addNewTodo={addNewTodo}
         />
         <TodoData
-          names = {names}
-          age = {age}
-          data = {data}
           todoList = {todoList}
         />    
         <img className="logo" src={reactLogo}/>
