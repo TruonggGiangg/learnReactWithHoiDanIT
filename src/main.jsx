@@ -5,17 +5,17 @@ import './style/global.css'
 import {
   createBrowserRouter,
   RouterProvider,
- } from "react-router-dom";
+} from "react-router-dom";
 import LoginPage from './pages/Login.jsx';
 const router = createBrowserRouter([
   {
-  path: "/",
-  element: <App/>
+    path: "/",
+    element: <App />
   },
   {
     path: "/login",
     element: <LoginPage></LoginPage>
-  }  
+  }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
