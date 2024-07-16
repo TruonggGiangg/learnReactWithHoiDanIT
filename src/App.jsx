@@ -9,13 +9,6 @@ const App = () => {
     ]);
 
 
-    const names = 'Le Truong Giang';
-    const age = 25;
-    const data = {
-      address :  "Ha Noi",
-      country : "VN"
-    }
-
     const addNewTodo = (names) => {
       const newToDo = {
         id: getRandomInt(1,1000000),
@@ -30,11 +23,11 @@ const App = () => {
     }
 
 
-    function getRandomInt(min, max) {
+    const getRandomInt = (min, max) => {
       min = Math.ceil(min);
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+    }
     
 
 
