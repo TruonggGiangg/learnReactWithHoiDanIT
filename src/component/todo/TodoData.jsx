@@ -1,15 +1,17 @@
 const TodoData = (props) =>{
-    const {names, age, data, todoList} = props;//object destructuring
+    const {todoList} = props;//object destructuring
     
     return (
         <div className="todo-data">
-          <div>{names}</div>
-          <div>{age}</div>
-          <div>{JSON.stringify(data)}</div>
-          <div>
-            {JSON.stringify(todoList)}
-          </div>
+          {todoList.map(
+            (x)=>{
+              return (
+                <div>ID:{x.id}, name:{x.name}</div>
+              )
+            }
+          )}
         </div>
     )
 }
+
 export default TodoData;
