@@ -14,6 +14,8 @@ const TodoInput = (props) => {
       setValueInput('')
     }
 
+    
+
     return (
         <div className="todo-contain-input">
           <input 

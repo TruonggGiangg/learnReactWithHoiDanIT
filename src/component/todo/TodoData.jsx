@@ -1,16 +1,20 @@
 const TodoData = (props) =>{
-    const {todoList} = props;//object destructuring
+    const {todoList, deleteTodo} = props;//object destructuring
     
+    const handleDel = (id) => {
+      deleteTodo(id);
+    }
+
     return (
         <div className="todo-data">
           {todoList.map(
-            (x, i)=>{
+            (x)=>{
               return (
                 <div className={`todo-item`} key={x.id}>
                   <div>
                     ID:{x.id}, name:{x.name}
                   </div>
-                  <button>Delete</button>
+                  <button onClick={()=>handleDel(x.id)}>Delete</button>
                 </div>
               )
             }
